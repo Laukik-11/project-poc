@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background-color: black;   */
+}
+.root-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background-image: url("background.svg"); */
+  background-image: url("../assets/bg_nitro.svg");
+  /* background-image: linear-gradient(to right bottom, #040404, #06070a, #050b10, #020f13, #001214); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 0 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+  transition: all 200ms ease-in-out;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #525252;
+  transition: all 200ms ease-in-out;
+}
