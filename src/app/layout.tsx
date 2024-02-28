@@ -4,14 +4,21 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Header from "@/components/header";
 import AppProvider from "@/state/app/context";
+import { Major_Mono_Display } from "next/font/google";
 
 // Font files can be colocated inside of `pages`
 // const drukWideBold = localFont({
 //   src: "./fonts/FontsFree-Net-Druk-Wide-Bold.ttf",
 // });
-const inter = Inter({
+
+const inter = Major_Mono_Display({
   subsets: ["latin"],
+  weight: "400"
 });
+
+// const inter = Inter({
+//   subsets: ["latin"],
+// });
 
 export default function RootLayout({
   children,
